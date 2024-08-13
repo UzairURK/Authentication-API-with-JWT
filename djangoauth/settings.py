@@ -138,8 +138,8 @@ REST_FRAMEWORK = {
     )
 
 }
-
-
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
+AUTH_USER_MODEL='account.User'
 # JWT setting
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
@@ -198,4 +198,6 @@ CORS_ALLOW_METHODS = (
     "POST",
     "PUT",
 )
+
+# Use custom user
 
